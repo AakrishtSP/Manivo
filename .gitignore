@@ -1,0 +1,16 @@
+# Root
+/build/
+/core/target/
+/android_gui/.dart_tool/
+/android_gui/build/
+/android_gui/.flutter-plugins
+/android_gui/.flutter-plugins-dependencies
+/android_gui/.packages
+/android_gui/.pub-cache/
+*.iml
+*.log
+*.lock
+.DS_Store
+.idea/
+.vscode/
+
