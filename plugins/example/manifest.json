@@ -1,0 +1,14 @@
+{
+  "name": "My Extension",
+  "version": "1.0",
+  "author": "Your Name",
+  "description": "A brief description of your extension",
+  "type": "source",
+  "icon": "icon.png",
+  "entry_point": "script.lua",
+
+  "settings": {
+    "enabled": true,
+    "option1": "default value"
+  }
+}

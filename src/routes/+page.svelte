@@ -3,13 +3,18 @@
 
   let name = $state("");
   let greetMsg = $state("");
+  let plugins = $state("");
 
   async function greet(event: Event) {
     event.preventDefault();
     // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
     greetMsg = await invoke("greet", { name });
+       plugins = await invoke("get_plugins_name", {});
+
   }
-</script>
+    // Example of invoking a command defined in src-tauri/src/main.calling-rust
+
+ </script>
 
 <main class="container">
   <h1>Welcome to Tauri + Svelte</h1>
@@ -32,6 +37,7 @@
     <button type="submit">Greet</button>
   </form>
   <p>{greetMsg}</p>
+    <p>Plugins loaded: {plugins}</p>
 </main>
 
 <style>
