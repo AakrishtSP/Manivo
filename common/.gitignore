@@ -1,6 +1,0 @@
-# Common assets/config
-# Only ignore temp or backup files
-*.tmp
-*.bak
-*.swp
-
